@@ -44,7 +44,7 @@ if ingredient_list:
 
     for x in ingredient_list:
         ingredients_string += x + ' '
-        st.subheader(x + 'Nutrition Info')
+        st.subheader(x + ' Nutrition Info')
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + x)
         
         # st.text(smoothiefroot_response.json())
